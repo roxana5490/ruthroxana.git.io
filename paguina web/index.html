@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastelería Dulce RULI</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+  <!-- Encabezado principal -->
+  <div class="main-header">
+    <div class="redes">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+   
+    <!--contactos-->
+<section id="contacto">
+  <h2>Contáctanos</h2>
+</br>
+  <p><strong>Teléfono:</strong> 999 999 999</p>
+</br>
+  <p><strong>Correo:</strong> pasteleria@dulceruli.com</p>
+
+  <!-- Botón de WhatsApp -->
+  <a href="https://wa.me/51999999999" target="_blank" class="boton-whatsapp">
+    Enviar mensaje por WhatsApp
+  </a>
+
+  <!-- Botón de Iniciar sesión -->
+  <div class="iniciar-sesion">
+    <button onclick="iniciarSesion()">Iniciar sesión</button>
+  </div>
+</section>
+ </div>
+    <h1 class="logo">DULCE RULI</h1>
+  </div>
+  <!-- Menú de navegación -->
+  <nav class="menu">
+  <ul>
+    <li><a href="#inicio" class="activo">INICIO</a></li>
+    <li><a href="#productos">PRODUCTOS</a></li>
+    <li><a href="#carrito">CARRITO</a></li>
+  </ul>
+</nav>
+</header>
+    <!-- PORTADA -->
+    <section class="portada" id="inicio">
+        <div class="portada-texto">
+            <h1>Bienvenidos a Dulce RULI</h1>
+            <p>Pasteles artesanales para cada momento especial.</p>
+            <br><br>
+              <img src="src/img/pastel.jpg" alt="pastel">
+        </div>
+    </section>
+    <!-- PRODUCTOS -->
+    <section id="productos" class="seccion-productos">
+       <header>
+    <input type="text" id="buscador" placeholder="Buscar..." />
+  </header>
+        <h2>Nuestros Productos</h2>
+        <div class="contenedor-productos">
+            <div class="producto">
+                <img src="src/img/pastel de chocolate.jpg" alt="Pastel de Chocolate">
+                <h3>Pastel de Chocolate</h3>
+                <p>S/ 25.00</p>
+                <button onclick="agregarAlCarrito('Pastel de Chocolate', 25)">Agregar</button>
+            </div>
+            <div class="producto">
+                <img src="src/img/pastel de fresa.jpeg" alt="Pastel de Fresa">
+                <h3>Pastel de Fresa</h3>
+                <p>S/ 30.00</p>
+                <button onclick="agregarAlCarrito('Pastel de Fresa', 30)">Agregar</button>
+            </div>
+            <div class="producto">
+                <img src="src/img/Cheesecake de Fresa.jpg" alt="Cheesecake">
+                <h3>Cheesecake de Fresa</h3>
+                <p>S/ 35.00</p>
+                <button onclick="agregarAlCarrito('Cheesecake', 35)">Agregar</button>
+            </div>
+            <div class="producto">
+                <img src="src/img/Pastel de boda.jpeg" alt="Pastel de Oreo">
+                <h3>Pastel de Boda</h3>
+                <p>S/ 33.00</p>
+                <button onclick="agregarAlCarrito('Pastel de Boda', 33)">Agregar</button>
+            </div>
+            <div class="producto">
+                <img src="src/img/Cupcakes surtidos.jpeg" alt="Pastel de Zanahoria">
+                <h3>Cupcakes surtidos</h3>
+                <p>S/ 32.00</p>
+                <button onclick="agregarAlCarrito('Cupcakes surtidos', 32)">Agregar</button>
+            </div>
+            <div class="producto">
+                <img src="src/img/Pastel de vainilla.jpeg" alt="Pastel de Zanahoria">
+                <h3>Pastel de vainilla</h3>
+                <p>S/ 50.00</p>
+                <button onclick="agregarAlCarrito('Pastel de vainilla', 50)">Agregar</button>
+            </div>
+            <div class="producto">
+                <img src="src/img/Tarta de Manzana.jpg" alt="Pastel de Zanahoria">
+                <h3>Tarta de Manzana</h3>
+                <p>S/ 40.00</p>
+                <button onclick="agregarAlCarrito('Tarta de Manzana', 40)">Agregar</button>
+            </div>
+            <div class="producto">
+                <img src="src/img/especial.jpg" alt="especial">
+                <h3>Especialidades</h3>
+                <p>S/ 45.00</p>
+                <button onclick="agregarAlCarrito('Especialidades', 45)">Agregar</button>
+            </div>
+            <div class="producto">
+                <img src="src/img/bocaditos.jpg" alt="Bocaditos">
+                <h3>Bocaditos</h3>
+                <p>S/ 55.00</p>
+                <button onclick="agregarAlCarrito('Bocaditos', 55)">Agregar</button>
+            </div>
+            <div class="producto">
+                <img src="src/img/postres.jpg" alt="postres">
+                <h3>Tarta de Manzana</h3>
+                <p>S/ 8.00</p>
+                <button onclick="agregarAlCarrito('postres', 8)">Agregar</button>
+            </div>
+            <div class="producto">
+                <img src="src/img/pastel de piña.jpg" alt="postres">
+                <h3>Pastel de piña</h3>
+                <p>S/ 60.00</p>
+                <button onclick="agregarAlCarrito('postres', 60)">Agregar</button>
+            </div>
+            <div class="producto">
+                <img src="src/img/pastel de mango.jpg" alt="postres">
+                <h3>pastel de mango</h3>
+                <p>S/ 100.00</p>
+                <button onclick="agregarAlCarrito('postres', 100)">Agregar</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CARRITO -->
+    <section id="carrito" class="seccion-carrito">
+        <h2>Carrito de Compras</h2>
+        <ul id="lista-carrito"></ul>
+        <p>Total: S/ <span id="total">0.00</span></p>
+    </section>
+        <script src="Code/code.js"></script>
+</body>
+</html>
